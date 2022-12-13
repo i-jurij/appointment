@@ -1,0 +1,109 @@
+
+.master_datetime {
+	text-align: center;
+	background: var(--bgcolor-content);
+	padding: 2rem;
+	color: var(--fontcolor-light, red);
+	font-size: 1.2rem;
+}
+
+.master_dates {
+	margin: 0 auto 1rem auto;
+	/* width: 46.8rem; */
+	white-space:nowrap;
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+.master_times {
+	margin: 0 auto 0 auto;
+	/* width: 46.8rem; */
+}
+
+.master_date, .master_time {
+	display: inline-block;
+	margin: 0.1rem;
+	width: 5rem;
+	background: var(--date_time_item_back);
+}
+
+.master_date input[type=radio],
+.master_time  input[type=radio]{
+	display: none;
+}
+
+.master_date label,
+.master_time label {
+	display: block;
+	cursor: pointer;
+	user-select: none;
+}
+
+.master_date label {
+	padding: 0.2rem 0.2rem;
+}
+.master_time label {
+	padding: 1rem 0;
+}
+
+.master_date input[type=radio]:checked + label,
+.master_time input[type=radio]:checked + label {
+	background: var(--date_time_item_back-active);
+}
+
+.master_date label:hover,
+.master_time label:hover {
+	background: var(--date_time_item_back-active);
+}
+
+.master_date input[type=radio]:disabled + label,
+.master_time input[type=radio]:disabled + label {
+	background: var(--date_time_item_back-disabled);
+	color: var(--date_time_item_color-disabled);
+}
+
+/* ----------- resolution up to 1360px-------------- */
+@media screen and (max-width: 1360px) {
+
+	.master_datetime {
+		max-width: 30rem;
+		margin: 0 auto;
+	}
+
+	.master_dates {
+		margin: 0 auto 1rem auto;
+		width: auto;
+		height: 10rem;
+		white-space: normal;
+		overflow: auto;
+		overflow-y: auto;
+		overflow-x: auto;
+	}
+
+	.master_times{
+		width: auto;
+	}
+}
+
+/* ----------- resolution up to 640px-------------- */
+@media screen and (max-width: 640px) {
+
+	.master_datetime {
+		max-width: 20rem;
+		margin: 0 auto;
+	}
+
+	.master_dates {
+		margin: 0 auto 1rem auto;
+		width: auto;
+		height: 13.5rem;
+		white-space: normal;
+		overflow: auto;
+		overflow-y: auto;
+		overflow-x: auto;
+	}
+
+	.master_times{
+		width: auto;
+	}
+}

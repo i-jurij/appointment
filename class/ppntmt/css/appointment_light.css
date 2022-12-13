@@ -1,0 +1,8 @@
+:root {
+  --bgcolor-content: rgba(245,243,246,1);
+  --fontcolor-light: DarkSlateGrey;
+  --date_time_item_back: #E5E5E5;
+  --date_time_item_back-active: #C3C9DF;
+  --date_time_item_back-disabled: #ECECEC;
+  --date_time_item_color-disabled: #A9A0A0;
+  }

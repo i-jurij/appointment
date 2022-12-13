@@ -1,0 +1,8 @@
+:root {
+  --bgcolor-content: #282C34;
+  --fontcolor-light: lightgrey;
+  --date_time_item_back: #535353;
+  --date_time_item_back-active: #9F091F;
+   --date_time_item_back-disabled: #353941;
+  --date_time_item_color-disabled: #676767;
+  }
