@@ -6,12 +6,7 @@ include 'php/sql_db_var.php';
 include_once 'php/init-sql.php';
 include_once 'php/func.php';
 include_once 'php/masters-sql.php';
-/*
-//masters id array
-$mast = array(1,2,3,4,5,6,7);
-$rand_mast_key = array_rand($mast);
-$id = $mast[$rand_mast_key];
-*/
+
 ?>
   <form method="post" action="" id="zapis_usluga_form" class="form_zapis_usluga">
     <div class="choice margin_bottom_1rem" id="time_choice">
