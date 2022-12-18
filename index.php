@@ -9,8 +9,7 @@
   <meta HTTP-EQUIV="Content-language" CONTENT="ru-RU">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <meta name="author" content="I-Jurij">
-  <?php require_once('class/ppntmt/appointment.php');
-      echo Ppntmt\Appointment::add_css_js('class'); ?>
+  <?php include 'ppntmt/head.html'; ?>
 </head>
   <body>
     <form method="post" action="" id="zapis_usluga_form" class="form_zapis_usluga">
@@ -21,7 +20,7 @@
     <?php
     //чтобы ucfirst работал для кириллицы и других многобайтных кодировок
     mb_internal_encoding("UTF-8");
-    //require_once('class/ppntmt/appointment.php');
+    require_once('ppntmt/appointment.php');
     //$bmw = new Appointment0(lehgth_cal : 8, period : 60, rest_day : $vyhd, exist_app_date_time_arr : $zapisi);
     $bmw = new Ppntmt\Appointment();
     print $bmw->html;
