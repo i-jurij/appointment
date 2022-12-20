@@ -364,7 +364,7 @@ class Appointment
         {
           array_splice($app_dt[$date], $key, 0, $lunch_start->format('H:i'));
         }
-        if ($lunch_end < $dt && $lunch_end > $r && $dt != $lunch_start)
+        if ($lunch_end < $dt && isset($r) && $lunch_end > $r && $dt != $lunch_start)
         {
           array_splice($app_dt[$date], $key, 0, $lunch_end->format('H:i'));
         }
