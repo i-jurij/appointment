@@ -18,7 +18,7 @@ class Appointment
 
   public function __construct($lehgth_cal = 14,
                               $endtime = "17:00",
-                              $tz = "Europe/Moscow",
+                              $tz = "Europe/Simferopol",
                               $weekend = array('Сб' => '14:00', 'Sat' => '14:00',
                                                 'Вс' => '', "Sun" => '',),
                               $rest_day_time = array('2022-12-17' => array(), '2022-12-15' => ['16:00', '17:00', '18:00'], ),
