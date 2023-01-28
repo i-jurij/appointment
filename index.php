@@ -21,9 +21,28 @@
     //чтобы ucfirst работал для кириллицы и других многобайтных кодировок
     mb_internal_encoding("UTF-8");
     require_once('ppntmt/appointment.php');
-    //$bmw = new Appointment0(lehgth_cal : 8, period : 60, rest_day : $vyhd, exist_app_date_time_arr : $zapisi);
     $bmw = new Ppntmt\Appointment();
-    print $bmw->html;
+    // if necessary, set values to properties
+    $bmw->lehgth_cal = 14;
+    $bmw->endtime = "17:00";
+    $bmw->tz = "Europe/Simferopol";
+    $bmw->org_weekend = array('Сб' => '14:00', 'Sat' => '14:00',
+                      'Вс' => '', "Sun" => '',);
+    $bmw->rest_day_time = array('2022-12-17' => array(), '2022-12-15' => ['16:00', '17:00', '18:00'], );
+    $bmw->holiday =  array('1979-09-18', '2005-05-31',);
+    $bmw->period = 60;
+    $bmw->worktime = array('09:00', '19:00');
+    $bmw->lunch = array("12:00", 40);
+    $bmw->exist_app_date_time_arr = ['2023-02-03' => array('11:00' => '', '13:00' => '', '14:30' => null),
+                                      '2023-02-06' => array('13:00' => '30', '13:30' => '30', '15:00' => 40),
+                                      '2023-02-07' => ['09:00' => '140'],
+                                      '2023-02-08' => ['09:00' => '40', '09:40' => '30', '10:10' => '60'], ];
+    $bmw->view_date_format = 'd.m';
+    $bmw->view_time_format = 'H:i';
+    // get date time
+    $bmw->get_app();
+    // output result
+    print $bmw->html();
     ?>
     </div>
     <?php

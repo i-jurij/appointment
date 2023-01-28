@@ -63,6 +63,27 @@
 }
 
 /* ----------- resolution up to 1360px-------------- */
+@media screen and (max-width: 1920px) {
+
+	.master_datetime {
+		max-width: 40rem;
+		margin: 0 auto;
+	}
+
+	.master_dates {
+		margin: 0 auto 1rem auto;
+		white-space: normal;
+		overflow: auto;
+		overflow-y: auto;
+		overflow-x: auto;
+	}
+
+	.master_times{
+		width: auto;
+	}
+}
+
+/* ----------- resolution up to 1360px-------------- */
 @media screen and (max-width: 1360px) {
 
 	.master_datetime {
@@ -73,7 +94,7 @@
 	.master_dates {
 		margin: 0 auto 1rem auto;
 		width: auto;
-		height: 10rem;
+		height: 10.2rem;
 		white-space: normal;
 		overflow: auto;
 		overflow-y: auto;

@@ -21,21 +21,15 @@ contents of the file "ppntmt/js/head.php" eg `<?php include 'ppntmt/head.html'; 
 `<?php require_once('path_to_dir/ppntmt/appointment.php'); ?>`   
 
 ## WORK  
-Class has no required input parameters, default presented below  
-Connect in PHP8 may be so:  
-`$var = new Ppntmt\Appointment(endtime : "18:00",  
-                       lehgth_cal : 14,  
-                       tz : "Europe/Moscow",  
-                       period : 30,  
-                       weekend : array("Вс", "Sun",),  
-                       rest_day_time : array('1979-09-18' => [''],'2005-05-31' => ['17:00', '18:00']),  
-                       holiday : array('1979-09-18','1979-09-18'),  
-                       lunch : array("12:00", "12:30"),  
-                       exist_app_date_time_arr : array('date' => array('times' => 'duration', ), ),  
-                       view_date_format : 'd.m',  
-                       view_time_format = 'H:i');`  
+Class has no required input parameters, default presented below 
+`$var = new Ppntmt\Appointment();`  
+`// if necessary, set values to properties`   
+`$var->lehgth_cal = 14;`   
+`$bmw->endtime = "17:00";` 
+`$bmw->get_app();`   
+`print $bmw->html();`   
 
-## INPUT ARRAY KEY FOR SETTING BY USER
+## PROPERTIES FOR SETTING BY USER
 
 `$endtime = "17:00";`  
 Время, после которого даты начинаются с завтрашней (те запись на сегодня уже недоступна)  
@@ -110,9 +104,9 @@ the duration can be omitted (zero or ''), then it is considered equal to $period
 for example  `['2022-12-02' => array('12:00' => '30', '15:00' => "), '2022-12-03' => array('13:00' => '20')]`  
 
 
-## PROPERTIES  
+## FUNCTIONS  
 
-`$this->adates`  
+`$this->adates()`  
 
 Массив дат в формате день недели две буквы WD и YYYY-mm-dd, eg "Пт 2022-12-02"  
 если нужны названия дней недели на английском - закомментируйте строку 
@@ -127,14 +121,14 @@ if you need the names of the days of the week in another language,
 replace the Russian abbreviations with the necessary ones  
 in the `$cyr` array of the `en_dayweek_to_rus($dayweek)` function  
 
-`$this->appointment_dates`  
+`$this->marked_dates()`  
 
 даты дней записи, где все выходные, праздники и тд помечены "disabled"  
 
 The dates, where all weekends, holidays, etc. are marked "disabled"  
  eg "Пн 2022-12-08 disabled"  
 
-`$this->html_view`  
+`$this->html_view()`  
 
 Строка c html кодом и данными для вывода на страницу:  
 
