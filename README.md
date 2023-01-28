@@ -10,7 +10,7 @@ add to your index.php (or file.php that contain html head) into tag HEAD
 contents of the file "ppntmt/js/head.php" eg <?php include 'ppntmt/head.html'; ?>  
 
 ## CONNECT  
-<?php require_once('path_to_dir/ppntmt/appointment.php');  
+<?php require_once('path_to_dir/ppntmt/appointment.php'); ?>
 
 ## WORK  
 class has no required input parameters, default presented below  
