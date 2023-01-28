@@ -1,3 +1,4 @@
+# Класс для записи на прием к специалисту
 # A class for displaying the time for making an appointment with a specialist.  
 
 The class does not require input parameters, but they can be set, the requirements are described below.  
@@ -38,7 +39,7 @@ The time after which the dates start from tomorrow (those records are no longer 
 The number of days displayed for an appointment  
 
 `$tz = "Europe/Moscow";`  
-Часовой пояс 
+Часовой пояс   
 Timezone  
 
 `$period = 60;`   
