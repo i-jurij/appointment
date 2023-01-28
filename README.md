@@ -2,8 +2,8 @@
 
 The class does not require input parameters, but they can be set, the requirements are described below.  
 The class returns an array of times with ready-made html markup for display in the browser.  
-Dates are displayed in <input type="radio" id="DATEd" name="date" value="DATE" />,  
-times are displayed in <input type="radio" id="DATETIME" name="time" value="TIME" />.  
+Dates are displayed in `<input type="radio" id="DATEd" name="date" value="DATE" />`,  
+times are displayed in `<input type="radio" id="DATETIME" name="time" value="TIME" />`.  
 
 You need to connect the css and js files for the class to work properly:  
 add to your index.php (or file.php that contain html head) into tag HEAD  
