@@ -7,10 +7,10 @@ times are displayed in <input type="radio" id="DATETIME" name="time" value="TIME
 
 You need to connect the css and js files for the class to work properly:  
 add to your index.php (or file.php that contain html head) into tag HEAD  
-contents of the file "ppntmt/js/head.php" eg <?php include 'ppntmt/head.html'; ?>  
-
+contents of the file "ppntmt/js/head.php" eg <?php include 'ppntmt/head.html'; ?>   
+ 
 ## CONNECT  
-<?php require_once('path_to_dir/ppntmt/appointment.php'); ?>
+<?php require_once('path_to_dir/ppntmt/appointment.php'); ?>    
 
 ## WORK  
 class has no required input parameters, default presented below  
@@ -27,7 +27,7 @@ $var = new Ppntmt\Appointment(endtime : "18:00",
                        view_date_format : 'd.m',  
                        view_time_format = 'H:i');  
 
-## PROPERTIES  
+## PROPERTIES FOR SETTING BE USER
 
 $endtime = "17:00";  
 время, после которого даты начинаются с завтрашней (те запись на сегодня уже недоступна)  
