@@ -35,7 +35,7 @@ Connect in PHP8 may be so:
                        view_date_format : 'd.m',  
                        view_time_format = 'H:i');`  
 
-## INPUT ARRAY KEY FOR SETTING BE USER
+## INPUT ARRAY KEY FOR SETTING BY USER
 
 `$endtime = "17:00";`  
 Время, после которого даты начинаются с завтрашней (те запись на сегодня уже недоступна)  
@@ -78,11 +78,13 @@ Working time $worktime[0] - start, $worktime[1] - end
 ### DATA related to a specific MASTER:  
 
 `$rest_day_time = array('1979-09-18' => array(),'2005-05-31' => ['17:00', '18:00'])`  
+
 Запланированные выходные дни и часы мастера,  
 получены из рабочего графика мастера, если массив значений пуст - выходной целый день.  
 Значение равно началу времени отгула, длительность не указывается и будет равна $period,  
 те, если период = 60 минут, а отсутствовать мастер будет 2 часа после 17:00  
 запись такая `$rest_day_time = array('дата YYYY-mm-dd' => ['17:00', '18:00'])`  
+
 The scheduled days off and the master's hours,  
 are obtained from the master's work schedule, if the array of values is empty - the whole day off.  
 The value is equal to the beginning of the time off, the duration is not specified and will be equal to $period,  
@@ -90,6 +92,7 @@ those if the period = 60 minutes, and the master will be absent 2 hours after 17
 the entry is `$rest_day_time = array('date YYYY-mm-dd' => ['17:00', '18:00'])`  
 
 `$exist_app_date_time_arr`  
+
 Массив предыдущих записей к мастеру  
 в формате `array('date' => array('times' => 'duration'))`,  
 где date в формате день недели две буквы WD и YYYY-mm-dd, eg "Пт 2022-12-02"  
@@ -97,6 +100,7 @@ the entry is `$rest_day_time = array('date YYYY-mm-dd' => ['17:00', '18:00'])`
 24часовом формате HH:mm в ключе и длительности услуги в минутах в значении,  
 длительность можно не указывать (null or ''), тогда она считается равной $period  
 eg `['2022-12-02' => array('12:00' => '30', '15:00' => ''), '2022-12-03' => array('13:00' => '20')]`  
+
 Array of previous entries to the master  
 in the array format `array('date' => array('time' => 'duration'))`,  
 where the date in the day of the week format is two letters SHD and YYYY-mm-dd, for example "Fri 2022-12-02"  
@@ -109,11 +113,13 @@ for example  `['2022-12-02' => array('12:00' => '30', '15:00' => "), '2022-12-03
 ## PROPERTIES  
 
 `$this->adates`  
+
 Массив дат в формате день недели две буквы WD и YYYY-mm-dd, eg "Пт 2022-12-02"  
 если нужны названия дней недели на английском - закомментируйте строку 
 `$rudayweek = $this->en_dayweek_to_rus($engdayweek);` в функции `pre_dates($lehgth_cal)`  
 если нужны названия дней недели на другом языке, замените русские сокращения на нужные  
 в массиве `$cyr` функции `en_dayweek_to_rus($dayweek)`  
+
 Array of dates in the format day of the week two letters WD and YYYY-mm-dd, eg "Fri 2022-12-02"  
 if you need the names of the days of the week in English - comment the line  
 `$ru day week = $this->en_dayweek_to_rus($engdayweek);` in the function `pre_dates($lehgth_cal)`  
@@ -122,13 +128,18 @@ replace the Russian abbreviations with the necessary ones
 in the `$cyr` array of the `en_dayweek_to_rus($dayweek)` function  
 
 `$this->appointment_dates`  
+
 даты дней записи, где все выходные, праздники и тд помечены "disabled"  
+
 The dates, where all weekends, holidays, etc. are marked "disabled"  
  eg "Пн 2022-12-08 disabled"  
 
 `$this->html_view`  
+
 Строка c html кодом и данными для вывода на страницу:  
+
 A string with html code and data for output to the page:  
+
 `<div class="master_datetime" id="master_datetime">
   <div class="master_dates">
     <div class="master_date">
