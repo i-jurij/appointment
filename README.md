@@ -35,7 +35,7 @@ Connect in PHP8 may be so:
                        view_date_format : 'd.m',  
                        view_time_format = 'H:i');`  
 
-## PROPERTIES FOR SETTING BE USER
+## INPUT ARRAY KEY FOR SETTING BE USER
 
 `$endtime = "17:00";`  
 Время, после которого даты начинаются с завтрашней (те запись на сегодня уже недоступна)  
