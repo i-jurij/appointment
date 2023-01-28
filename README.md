@@ -1,3 +1,4 @@
+```
 # A class for displaying the time for making an appointment with a specialist.  
 
 The class does not require input parameters, but they can be set, the requirements are described below.  
@@ -8,10 +9,12 @@ times are displayed in <input type="radio" id="DATETIME" name="time" value="TIME
 You need to connect the css and js files for the class to work properly:  
 add to your index.php (or file.php that contain html head) into tag HEAD  
 contents of the file "ppntmt/js/head.php" eg <?php include 'ppntmt/head.html'; ?>  
-
+```
+```
 ## CONNECT  
 <?php require_once('path_to_dir/ppntmt/appointment.php');  
-
+```
+```
 ## WORK  
 class has no required input parameters, default presented below  
 connect in PHP8 may be so:  
@@ -26,7 +29,7 @@ $var = new Ppntmt\Appointment(endtime : "18:00",
                        exist_app_date_time_arr : array('date' => array('times' => 'duration', ), ),  
                        view_date_format : 'd.m',  
                        view_time_format = 'H:i');  
-
+```
 ## PROPERTIES  
 
 $endtime = "17:00";  
@@ -63,7 +66,7 @@ $worktime = array('09.00', '18:00')
 рабочее время $worktime[0] - начало, $worktime[1] - конец  
 working time $worktime[0] - start, $worktime[1] - end  
 
-
+```
 ### DATA related to a specific MASTER:  
 
 $rest_day_time = array('1979-09-18' => array(),'2005-05-31' => ['17:00', '18:00'])  
@@ -93,8 +96,8 @@ a 'times' => 'duration' is an associative array of appointed times in
 24-hour HH format:mm in the key and the duration of the service in minutes in the value,  
 the duration can be omitted (zero or ''), then it is considered equal to $period  
 for example ['2022-12-02' => array('12:00' => '30', '15:00' => "), '2022-12-03' => array('13:00' => '20')]  
-
-
+```
+```
 ## PROPERTIES  
 
 $this->adates  
@@ -132,3 +135,4 @@ a string with html code and data for output to the page:
     </div>
   </div>
 </div>
+```
