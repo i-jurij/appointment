@@ -139,18 +139,17 @@ The dates, where all weekends, holidays, etc. are marked "disabled"
 Строка c html кодом и данными для вывода на страницу:  
 
 A string with html code and data for output to the page:  
-
-`<div class="master_datetime" id="master_datetime">
-  <div class="master_dates">
-    <div class="master_date">
-      <input type="radio" class="dat" id="DATEd" name="date" value="DATE" />
-      <label for="DATEd">WEEKDAY<br />WEEKDAY+NUMBER_DAY_OF_MONTH</label>
-    </div>
-  </div>
-  <div class="master_times" style="display:none;" id="tDATE">
-    <div class="master_time ">
-      <input type="radio" id="DATETIME" name="time" value="TIME" required />
-      <label for="DATETIME">TIME</label>
-    </div>
-  </div>
-</div>`
+<div class="master_datetime" id="master_datetime">    
+  <div class="master_dates">    
+    <div class="master_date">   
+      <input type="radio" class="dat" id="DATEd" name="date" value="DATE" />    
+      <label for="DATEd">WEEKDAY<br />WEEKDAY+NUMBER_DAY_OF_MONTH</label>   
+    </div>    
+  </div>    
+  <div class="master_times" style="display:none;" id="tDATE">   
+    <div class="master_time ">    
+      <input type="radio" id="DATETIME" name="time" value="TIME" required />    
+      <label for="DATETIME">TIME</label>    
+    </div>    
+  </div>    
+</div>    
