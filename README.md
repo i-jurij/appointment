@@ -1,6 +1,10 @@
 # Класс для записи на прием к специалисту
 # A class for displaying the time for making an appointment with a specialist.  
 
+Класс не требует входных параметров, но они могут быть установлены, требования ниже.   
+Требуется подключение css и js файлов: добавьте в тег HEAD содержимое файла
+"ppntmt/js/head.php", например так `<?php include 'ppntmt/head.html'; ?>`   
+
 The class does not require input parameters, but they can be set, the requirements are described below.  
 The class returns an array of times with ready-made html markup for display in the browser.  
 Dates are displayed in `<input type="radio" id="DATEd" name="date" value="DATE" />`,  
