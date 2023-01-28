@@ -25,7 +25,7 @@ Class has no required input parameters, default presented below
 `$var = new Ppntmt\Appointment();`  
 `// if necessary, set values to properties`   
 `$var->lehgth_cal = 14;`   
-`$bmw->endtime = "17:00";` 
+`$bmw->endtime = "17:00";`  
 `$bmw->get_app();`   
 `print $bmw->html();`   
 
