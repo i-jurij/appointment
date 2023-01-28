@@ -21,7 +21,7 @@ contents of the file "ppntmt/js/head.php" eg `<?php include 'ppntmt/head.html'; 
 `<?php require_once('path_to_dir/ppntmt/appointment.php'); ?>`   
 
 ## WORK  
-Class has no required input parameters, default presented below 
+Class has no required input parameters, default presented below    
 `$var = new Ppntmt\Appointment();`  
 `// if necessary, set values to properties`   
 `$var->lehgth_cal = 14;`   
