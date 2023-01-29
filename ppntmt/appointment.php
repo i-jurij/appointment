@@ -1,4 +1,7 @@
 <?php
+//Copyright © 2023 I-Jurij (ijurij@gmail.com)
+//Licensed under the my own license.
+
 namespace Ppntmt;
 
 class Appointment
@@ -458,3 +461,6 @@ class Appointment
   }
 //end class
 }
+
+//Copyright © 2023 I-Jurij (ijurij@gmail.com)
+//Licensed under the my own license.
