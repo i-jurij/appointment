@@ -25,11 +25,11 @@ Class has no required input parameters, default presented below
 `$var = new Ppntmt\Appointment();`  
 `// if necessary, set values to properties`   
 `$var->lehgth_cal = 14;`   
-`$bmw->endtime = "17:00";` 
+`$bmw->endtime = "17:00";`    
 `$bmw->get_app();`   
 `print $bmw->html();`   
 
-## PROPERTIES FOR SETTING BY USER
+## PROPERTIES FOR SETTING BY USER 
 
 `$endtime = "17:00";`  
 Время, после которого даты начинаются с завтрашней (те запись на сегодня уже недоступна)  
