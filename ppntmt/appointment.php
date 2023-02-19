@@ -1,5 +1,5 @@
 <?php
-//Copyright © 2023 I-Jurij (ijurij@gmail.com)
+//Copyright © 2023 I-Jurij (yjurij@gmail.com)
 //Licensed under the my own license.
 
 namespace Ppntmt;
@@ -82,7 +82,7 @@ class Appointment
     /*
     //variant 2
     $startDate = new \DateTime();
-    for ($i=0; $i < $this->lehgth_cal; $i++) { 
+    for ($i=0; $i < $this->lehgth_cal; $i++) {
       $engdayweek = $startDate->format('D');
       $rudayweek = $this->en_dayweek_to_rus($engdayweek);
       $dates[] = $rudayweek . "&nbsp;". $startDate->format('Y-m-d');
@@ -104,7 +104,7 @@ class Appointment
     */
     // variant 4
     $startDate = date('now');
-    for ($i=0; $i < $this->lehgth_cal; $i++) { 
+    for ($i=0; $i < $this->lehgth_cal; $i++) {
       $engdayweek = date('D',strtotime($startDate) );
       $rudayweek = $this->en_dayweek_to_rus($engdayweek);
       $dates[] = $rudayweek . "&nbsp;". date('Y-m-d', strtotime($startDate));
@@ -462,5 +462,5 @@ class Appointment
 //end class
 }
 
-//Copyright © 2023 I-Jurij (ijurij@gmail.com)
+//Copyright © 2023 I-Jurij (yjurij@gmail.com)
 //Licensed under the my own license.

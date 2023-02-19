@@ -6,7 +6,7 @@
 Даты в `<input type="radio" id="DATEd" name="date" value="DATE" />`,     
 Времена в `<input type="radio" id="DATETIME" name="time" value="TIME" />`.     
  Требуется подключение css и js файлов: добавьте в тег HEAD содержимое файла
-"ppntmt/js/head.php", например так `<?php include 'ppntmt/head.html'; ?>`   
+"ppntmt/head.html", например так `<?php include 'ppntmt/head.html'; ?>`   
 
 The class does not require input parameters, but they can be set, the requirements are described below.  
 The class returns an array of times with ready-made html markup for display in the browser.  
