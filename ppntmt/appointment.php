@@ -360,6 +360,7 @@ class Appointment
         foreach ($this->exist_app_date_time_arr[$date] as $serv_time => $serv_len)
         {
           $serv_start = \DateTimeImmutable::createFromFormat('Y-m-d_H:i', $date.'_'.$serv_time);
+          $r = 'M';
           if (!empty($serv_len))
           {
             //if length of service > 5 then minutes, else hours
