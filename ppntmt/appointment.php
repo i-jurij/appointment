@@ -118,15 +118,14 @@ class Appointment
   {
     $now = new \DateTimeImmutable('now', new \DateTimeZone($this->tz));
     $endnow = new \DateTimeImmutable($this->endtime);
-    if ($now > $endnow)
-    {
-      $this->lehgth_cal++;
-      $res = $this->pre_dates();
+    $res = $this->pre_dates();
+    if ($now > $endnow) {
+      $last_day = end($res); reset($res);
+      $arr = explode("&nbsp;", $last_day);
+      $add_day = date('Y-m-d', strtotime( $arr[1] . ' +1 day'));
+      $add_day_res = $this->en_dayweek_to_rus(date('D',strtotime($add_day))) . "&nbsp;". date('Y-m-d', strtotime($add_day));
+      array_push($res, $add_day_res);
       array_shift($res);
-    }
-    else
-    {
-      $res = $this->pre_dates();
     }
     return $res;
   }
