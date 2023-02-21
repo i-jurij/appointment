@@ -40,7 +40,7 @@
     $bmw->view_date_format = 'd.m';
     $bmw->view_time_format = 'H:i';
     // get date time
-    $bmw->get_app();
+    //$bmw->result();
     // output result
     print $bmw->html();
     ?>
