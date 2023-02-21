@@ -339,8 +339,13 @@ class Appointment
         //объединим массив времен для записей и массив с началом и концом каждой записи
         foreach ($start_end_array as $val)
         {
-          //допишем в массив времен времена записей, которых там еще нет
-          if (!in_array($val->format('H:i'), $times))
+          //допишем в массив времен времена записей, которых там еще нет,
+          //если время не меньше времени начала или больше времени окончания рабочего дня
+          //$time_of_val = \DateTimeImmutable::createFromFormat('Y-m-d_H:i', $date.'_'.$val);
+          $start = \DateTimeImmutable::createFromFormat('Y-m-d_H:i', $date.'_'.$this->worktime[0]);
+          $end = \DateTimeImmutable::createFromFormat('Y-m-d_H:i', $date.'_'.$this->worktime[1]);
+
+          if (!in_array($val->format('H:i'), $times) && ($val > $start && $val < $end) )
           {
             array_push($dt[$date], $val->format('H:i'));
           }
