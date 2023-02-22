@@ -2,7 +2,7 @@
 # A class for displaying the time for making an appointment with a specialist.  
 
 Класс не требует входных параметров, но они могут быть установлены, требования ниже.  
-Класс возвращает массив времен для записи с готовой html разметкой.  
+Класс возвращает массив времен для записи или строку с готовой html разметкой.  
 Даты в `<input type="radio" id="DATEd" name="date" value="DATE" />`,     
 Времена в `<input type="radio" id="DATETIME" name="time" value="TIME" />`.     
  Требуется подключение css и js файлов: добавьте в тег HEAD содержимое файла
@@ -26,8 +26,8 @@ Class has no required input parameters, default presented below
 `// if necessary, set values to properties`   
 `$var->lehgth_cal = 14;`   
 `$bmw->endtime = "17:00";` 
-`$bmw->get_app();`   
-`print $bmw->html();`   
+`$bmw->result(); // array of times`   
+`print $bmw->html(); // string with html code`   
 
 ## PROPERTIES FOR SETTING BY USER 
 
