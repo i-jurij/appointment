@@ -26,7 +26,7 @@ Class has no required input parameters, default presented below
 `// if necessary, set values to properties`   
 `$var->lehgth_cal = 14;`   
 `$bmw->endtime = "17:00";` 
-`$bmw->result(); // array of times`   
+`$bmw->result(); // array of times`    
 `print $bmw->html(); // string with html code`   
 
 ## PROPERTIES FOR SETTING BY USER 
