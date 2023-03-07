@@ -118,14 +118,13 @@ class Appointment
     }
     */
     // variant 4
-    $startDate = date('now');
+    $startDate = date("Y-m-d");
     for ($i=0; $i < $this->lehgth_cal; $i++) {
       $engdayweek = date('D',strtotime($startDate) );
       $rudayweek = $this->en_dayweek_to_rus($engdayweek);
       $dates[] = $rudayweek . "&nbsp;". date('Y-m-d', strtotime($startDate));
       $startDate = date('Y-m-d', strtotime($startDate . ' +1 day'));
     }
-
     return $dates;
   }
 
