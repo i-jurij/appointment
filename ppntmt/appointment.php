@@ -1,8 +1,8 @@
 <?php
 //Copyright © 2023 I-Jurij (yjurij@gmail.com)
 //Licensed under the my own license.
-/*
-mb_internal_encoding("UTF-8");
+/* Example:
+    mb_internal_encoding("UTF-8");
     require_once('ppntmt/appointment.php');
     $bmw = new Ppntmt\Appointment();
     // if necessary, set values to properties

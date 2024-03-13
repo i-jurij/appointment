@@ -9,7 +9,7 @@
   <meta HTTP-EQUIV="Content-language" CONTENT="ru-RU">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <meta name="author" content="I-Jurij">
-  <?php include 'ppntmt/head.html'; ?>
+  <?php include 'ppntmt/head.php'; ?>
 </head>
   <body>
     <form method="post" action="" id="zapis_usluga_form" class="form_zapis_usluga">
